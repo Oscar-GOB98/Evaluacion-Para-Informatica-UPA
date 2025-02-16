@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Usuarios</title>
+    <link rel="stylesheet" href="reporte.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reportes de Usuarios</h1>
+        <select id="reporte">
+            <option value="todos_usuarios">Todos los Usuarios</option>
+            <option value="usuarios_creados_hoy">Usuarios Creados Hoy</option>
+            <option value="usuarios_creados_ayer">Usuarios Creados Ayer</option>
+        </select>
+        <button onclick="obtenerReporte()">Generar Reporte</button>
+        <div id="resultado"></div>
+    </div>
+    <script src="reporte.js"></script>
+</body>
+</html>
